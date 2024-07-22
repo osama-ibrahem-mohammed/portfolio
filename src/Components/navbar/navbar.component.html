@@ -1,0 +1,15 @@
+<nav>
+  <div class="container nav__container">
+    <a href="index.html" class="nav__logo" >
+      <img src='assets/mylogo.PNG' alt="Logo" />
+    </a>
+    <ul class='nav__menu'>
+      <li *ngFor="let item of navCtrl.data">
+        <a [href]="item.link">{{item.title}}</a>
+      </li>
+    </ul>
+    <!-- <button id='theme__icon'>
+      <i id='theme__icon' class="fa-solid fa-palette" style="font-size: 24px;"></i>
+    </button> -->
+  </div>
+</nav>

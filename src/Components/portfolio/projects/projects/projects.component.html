@@ -1,0 +1,10 @@
+<div class="portfolio__projects">
+  <div *ngFor="let item of prj">
+    <app-project [project]="item" ></app-project>
+  </div>
+  <!-- {
+      projects.map(project => (
+          <Project key={project.id} project={project} />
+      ))
+  } -->
+</div>

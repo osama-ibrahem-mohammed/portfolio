@@ -1,0 +1,23 @@
+<footer>
+  <div class="container footer__container">
+    <ul class='nav__menu'>
+      <!-- {
+        links.map(fLink => <li key={fLink.id}><a href={fLink.link}>{fLink.title}</a></li>)
+      } -->
+    </ul>
+    <div class="footer__socials">
+      <ng-container *ngFor="let social of footserv.socials">
+        <a [href]='social.link' target="_blank" [innerHTML]="social.icon" rel="noopener noreferrer"></a>
+      </ng-container>
+      <!-- {
+        socials.map(social => <a key={social.id} href={social.link} target="_blank" rel="noopener noreferrer">{social.icon}</a>)
+      } -->
+    </div>
+  </div>
+  <div class="footer__info">
+    <p class="footer__phone"><i class="fa fa-phone"></i> +20 111 017 3497</p>
+    <div class="footer__copyright">
+      <small>2024 <strong>Osama Ibrahem</strong> &copy; All Rights Reserved</small>
+    </div>
+  </div>
+</footer>

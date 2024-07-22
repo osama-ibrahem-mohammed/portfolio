@@ -1,0 +1,21 @@
+<header id="header">
+  <div class="container header__container">
+    <div class="header__profile">
+      <img src='assets/port2foto.jpg' alt="Header Portait" />
+    </div>
+    <h3>Osama Ibrahem</h3>
+    <p>
+    You are a click away from building your dream website or web app. Send me the details of your project for a modern, responsive, highly performant website today!
+    </p>
+    <div class="header__cta">
+      <a href="#contact" class='btn primary'>Let's Talk</a>
+      <a href="#portfolio" class='btn light'>My Work</a>
+    </div>
+    <div class="header__socials">
+      <a target="_blank" *ngFor="let item of headservice.data" [href]="item.link"[innerHTML]="item.icon"></a>
+      <!-- {
+        data.map(item => <a key={item.id} href={item.link} target="_blank" rel="noopener noreferrer">{item.icon}</a>)
+      } -->
+    </div>
+  </div>
+</header>

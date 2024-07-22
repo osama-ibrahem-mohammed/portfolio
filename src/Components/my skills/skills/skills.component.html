@@ -1,0 +1,15 @@
+<section class="wit" id="skill">
+  <h2>my skills</h2>
+<mat-accordion>
+  <mat-expansion-panel *ngFor="let skillCategory of skills">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        {{ skillCategory.category }}
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <ul>
+      <li *ngFor="let skill of skillCategory.items">{{ skill }}</li>
+    </ul>
+  </mat-expansion-panel>
+</mat-accordion>
+</section>

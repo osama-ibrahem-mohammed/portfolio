@@ -1,0 +1,36 @@
+<section id="about">
+  <div class="container about__container">
+      <div class="about__left">
+          <div class="about__portrait">
+              <img src='assets/mylogo.PNG' alt="About Image" />
+          </div>
+      </div>
+      <div class="about__right">
+          <h2>About Me</h2>
+          <div class="about__cards">
+            <div *ngFor="let item of aboutService.data" class="about__card card " >
+
+              <span class='about__card-icon' [innerHTML]="item.icon" ></span>
+              <h5>{{item.title}}</h5>
+              <small>{{item.desc}}</small>
+
+            </div>
+
+          </div>
+          <p>
+          Building projects and turning bussiness into reality  have always been my passion.
+          </p>
+          <p>
+            Hi, my name is <strong> Osama Ibrahem </strong>from Egypt. I'm a full-stack web developer with a passion for bringing your business online the right way. I graduated from <strong>ITI's 9-month</strong>  program, ensuring I have a solid foundation in the latest technologies. My top priority is to provide you with industry-standard design and all the functionality you need to operate smoothly online. Get in touch today with the details of your project, and let's get started! Check out my resume below!
+
+          </p>
+          <a [href]="CV" download="_Osama-ibrahem .Net developer.pdf" class="btn primary">
+            Download CV <i class="fas fa-download"></i>
+          </a>
+
+      </div>
+  </div>
+</section>
+
+
+

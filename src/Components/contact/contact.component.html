@@ -1,0 +1,12 @@
+<section class="wit" id="contact">
+  <h2>Get In Touch</h2>
+  <p>Shoot me a message via any of the links below or call me at:</p>
+  <div class="container contact__container">
+    <ng-container *ngFor="let item of con.data">
+      <a [href]="item.link" target="_blank" [innerHTML]="item.icon"></a>
+    </ng-container>
+  </div>
+  <p class="contact__number">
+    <i class="fa fa-phone"></i> +20 111 017 3497
+  </p>
+</section>

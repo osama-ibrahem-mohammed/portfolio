@@ -1,0 +1,11 @@
+<div class='portfolio__categories'>
+
+  <!-- {
+      categories.map(category => (
+          <CategoryButton key={category} category={category} onChangeCategory={() => changeCategoryHandler(category)} className={`btn cat__btn ${activeCategory == category ? 'primary' : 'white'}`}/>
+      ))
+  } -->
+  <ng-container *ngFor="let item of categ">
+  <app-category-button [category]="item" (selectedcategory)="change($event)"></app-category-button>
+</ng-container>
+</div>

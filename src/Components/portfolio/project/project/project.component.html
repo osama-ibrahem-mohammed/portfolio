@@ -1,0 +1,11 @@
+<div class="portfolio__project about__card card">
+  <div class="portfolio__project-image">
+      <img [src]='project.image' alt="Portfolio Project Image" />
+  </div>
+  <h4>{{project.title}}</h4>
+  <p>{{project.desc}}</p>
+  <div class="portfolio__project-cta">
+      <a [href]='project.demo'class="btn sm" target="_blank" rel="noopner noreferrer">Demo</a>
+      <a [href]='project.github' class="btn sm primary" target="_blank" rel="noopner noreferrer">Gitbub</a>
+  </div>
+</div>

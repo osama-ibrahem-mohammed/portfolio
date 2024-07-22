@@ -1,0 +1,13 @@
+<section class="wit" id="services">
+  <h2>My Services</h2>
+  <p>I give you the best in all the services below</p>
+  <div class="container services__container">
+    <div *ngFor="let item of Data.data" class="about__card card " >
+
+      <span class='about__card-icon' [innerHTML]="item.icon" ></span>
+      <h5>{{item.title}}</h5>
+      <small>{{item.desc}}</small>
+
+    </div>
+  </div>
+</section>
